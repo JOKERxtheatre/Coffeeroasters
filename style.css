@@ -418,7 +418,10 @@ nav .btn {
     gap: 24px;
   }
   .bg-text h2 {
-    font-size: 40px;
+    font-size: clamp(24px, 10vw, 150px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .bg-text::before {
     background: linear-gradient(
